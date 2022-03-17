@@ -1,8 +1,8 @@
 ## Software Stack
 
-- PHP 8.1
-- MySQL 8.0
-- Laravel 9.2
+-  PHP 8.1
+-  MySQL 8.0
+-  Laravel 9.2
 
 ## Develop
 
