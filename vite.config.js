@@ -29,9 +29,5 @@ export default defineConfig(({ command }) => {
             '@': resolve(__dirname, 'resources/js'),
          },
       },
-
-      optimizeDeps: {
-         include: ['vue', 'axios'],
-      },
    }
 })

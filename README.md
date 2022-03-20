@@ -86,4 +86,4 @@ Run build script for production:
 npm run build
 ```
 
-This will store production-ready assets inside `public/dist` directory. For the sake of simplicity, you can commit and store them in your Git repository and deploy with rest of the code. But if you want to fine-tune this process, you can create a script to publish the assets to [Amazon S3](https://aws.amazon.com/s3/) or [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces), and serve them via CDN, such as: [CloudFlare](https://www.cloudflare.com/) or [Amazon CloudFront](https://aws.amazon.com/cloudfront/).
+This will store production-ready assets inside `public/dist` directory. If you want to fine-tune this process, you can create a script to publish the assets to [Amazon S3](https://aws.amazon.com/s3/) or [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces), and serve them via CDN, such as: [CloudFlare](https://www.cloudflare.com/) or [Amazon CloudFront](https://aws.amazon.com/cloudfront/).
