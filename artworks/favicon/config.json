@@ -1,0 +1,65 @@
+{
+   "masterPicture": "artworks/favicon/master.png",
+   "iconsPath": "/favicon",
+   "design": {
+      "ios": {
+         "pictureAspect": "backgroundAndMargin",
+         "backgroundColor": "#ffffff",
+         "margin": "32%",
+         "assets": {
+            "ios6AndPriorIcons": false,
+            "ios7AndLaterIcons": false,
+            "precomposedIcons": false,
+            "declareOnlyDefaultIcon": true
+         },
+         "appName": "Laravel"
+      },
+      "desktopBrowser": {
+         "design": "raw"
+      },
+      "windows": {
+         "pictureAspect": "whiteSilhouette",
+         "backgroundColor": "#0099ff",
+         "onConflict": "override",
+         "assets": {
+            "windows80Ie10Tile": false,
+            "windows10Ie11EdgeTiles": {
+               "small": false,
+               "medium": true,
+               "big": false,
+               "rectangle": false
+            }
+         },
+         "appName": "Laravel"
+      },
+      "androidChrome": {
+         "pictureAspect": "backgroundAndMargin",
+         "margin": "31%",
+         "backgroundColor": "#ffffff",
+         "themeColor": "#ffffff",
+         "manifest": {
+            "name": "Laravel",
+            "startUrl": "http://localhost/",
+            "display": "standalone",
+            "orientation": "portrait",
+            "onConflict": "override",
+            "declared": true
+         },
+         "assets": {
+            "legacyIcon": false,
+            "lowResolutionIcons": false
+         }
+      },
+      "safariPinnedTab": {
+         "pictureAspect": "silhouette",
+         "themeColor": "#0099ff"
+      }
+   },
+   "settings": {
+      "scalingAlgorithm": "Mitchell",
+      "errorOnImageTooSmall": false,
+      "readmeFile": false,
+      "htmlCodeFile": false,
+      "usePathAsIs": false
+   }
+}

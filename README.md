@@ -80,10 +80,22 @@ If you have scalibility in mind, go with [Laravel Vapor](https://vapor.laravel.c
 
 ### Front-End Assets
 
-Run build script for production:
+Run the deploy script on production environment:
 
 ```
-npm run build
+npm run deploy
 ```
 
 This will store production-ready assets inside `public/dist` directory. If you want to fine-tune this process, you can create a script to publish the assets to [Amazon S3](https://aws.amazon.com/s3/) or [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces), and serve them via CDN, such as: [CloudFlare](https://www.cloudflare.com/) or [Amazon CloudFront](https://aws.amazon.com/cloudfront/).
+
+## Extra
+
+### Generate Favicons
+
+If you ever need to update the favicon, save it as `artworks/favicon/master.png` with a resolution of `1024x1024` pixel, and run:
+
+```
+npm run favicon:generate
+```
+
+This will generate new favicon assets under `resources/favicon`.

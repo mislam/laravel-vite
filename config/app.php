@@ -165,6 +165,7 @@ return [
       /*
        * Package Service Providers...
        */
+      Lib\Vite\ViteServiceProvider::class,
 
       /*
        * Application Service Providers...
@@ -174,7 +175,6 @@ return [
       // App\Providers\BroadcastServiceProvider::class,
       App\Providers\EventServiceProvider::class,
       App\Providers\RouteServiceProvider::class,
-      App\Providers\ViteServiceProvider::class,
    ],
 
    /*

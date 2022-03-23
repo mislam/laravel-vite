@@ -2,14 +2,20 @@
    "private": true,
    "scripts": {
       "dev": "vite",
-      "build": "vite build && node build-obfuscate"
+      "favicon:generate": "npx real-favicon generate artworks/favicon/config.json /dev/null resources/favicon",
+      "favicon:build": "node tooling/build-favicon",
+      "build": "vite build",
+      "build:obfuscate": "node tooling/build-obfuscate",
+      "deploy": "npm run build && npm run favicon:build && npm run build:obfuscate"
    },
    "devDependencies": {
       "@prettier/plugin-php": "^0.18.3",
       "@vitejs/plugin-vue": "^2.2.4",
       "autoprefixer": "^10.4.3",
       "axios": "^0.26.1",
+      "cli-real-favicon": "^0.0.8",
       "crypto": "^1.0.1",
+      "dotenv": "^16.0.0",
       "glob": "^7.2.0",
       "hashids": "^2.2.10",
       "postcss": "^8.4.11",

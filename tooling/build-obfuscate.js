@@ -51,9 +51,8 @@ glob.sync(`${assetsDir}/*.*`).forEach((filePath, index) => {
  */
 replace.sync({
    files: `${buildDir}/**/*.*`,
-   from: Object.keys(searchReplace).map((key) => RegExp(key, 'g')),
+   from: Object.keys(searchReplace).map((key) => RegExp(key.replace(/\./g, '\\.'), 'g')),
    to: Object.values(searchReplace),
-   countMatches: true,
 })
 
 /**
